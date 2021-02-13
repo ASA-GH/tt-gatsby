@@ -9,13 +9,13 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
+    // {
+      // resolve: `gatsby-source-filesystem`,
+      // options: {
+      //   name: `images`,
+      //   path: `${__dirname}/src/images`,
+      // },
+    // },
     {
       resolve: `gatsby-source-contentful`,
       options: {
@@ -23,7 +23,13 @@ module.exports = {
         accessToken: `93k1PHfX5C3f9TvCIQlzOf-hIfR5k90H1A02XlNWb4Q`,
       },
     },
-
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/components/typography`,
+        omitGoogleFont: true
+      },
+    },
     // {
     //   resolve: `gatsby-plugin-manifest`,
     //   options: {

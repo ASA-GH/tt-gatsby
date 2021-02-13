@@ -1,19 +1,10 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
 import Header from "./header"
 import Footer from "./footer"
-
 import styled from "styled-components"
-// error
+
 const Container = styled.div`
-font-family: 'Open Sans', Arial, sans-serif;
   background-color: #e5e5e5;
   max-width: 1365px;
   min-width: max-content;
@@ -29,8 +20,7 @@ const Wrapper = styled.div`
   width: 100%;
   display: grid;
   grid-template-rows: 1fr max-content;
-  background-color: #E5E5E5;
-  ;
+  background-color: #e5e5e5;
 `
 const Inner = styled.div`
   width: 100%;
@@ -40,9 +30,7 @@ const Inner = styled.div`
   align-items: center;
 `
 
-
 const Layout = ({ children }) => {
-
   return (
     <Container>
       <Header />

@@ -21,13 +21,14 @@ const Inner = styled.div`
 `
 
 const LogoText = styled.div`
-  width: max-content;
-  height: max-content;
+  width: 55px;
+  height: 33px;
   padding: 0;
   color: #fff;
   font-weight: normal;
   font-size: 24px;
-  line-height: 33px;
+  line-height: 138%;
+  font-style: normal;
 `
 const Logo = styled.div`
   display: grid;
@@ -38,25 +39,29 @@ const Logo = styled.div`
   border-radius: 21.5px;
   background-color: #2d5b8f;
 `
-const Logoin = styled.div`
+const Login = styled.div`
   width: max-content;
-  height: max-content;
+  height: 25px;
   padding: 0;
   color: #000;
   font-weight: normal;
   font-size: 18px;
+  line-height: 100%;
+  margin: 0;
+  font-style: normal;
   text-transform: uppercase;
 `
-const Item = styled.li`
-  width: max-content;
-  height: max-content;
+const Item = styled.div`
+  width: 71px;
+  height: 30px;
   padding: 0;
   color: #000;
   font-weight: normal;
   font-size: 22px;
-  list-style: none;
+  line-height: 136%;
+  font-style: normal;
 `
-const Items = styled.ul`
+const Items = styled.div`
   display: grid;
   align-items: center;
   justify-content: space-between;
@@ -78,7 +83,7 @@ const Header = () => {
           <Item>Item 3</Item>
           <Item>Item 4</Item>
         </Items>
-        <Logoin>log in/sign up</Logoin>
+        <Login>Log in/Sign up</Login>
       </Inner>
     </Wrapper>
   )

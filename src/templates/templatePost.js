@@ -5,10 +5,11 @@ import styled from "styled-components"
 // import SEO from "../components/seo"
 import { renderRichText } from "gatsby-source-contentful/rich-text"
 const Content = styled.div`
-  width: 1160px;
+  min-width: 1160px;
+  max-width: 1200px;
   max-height: max-content;
   min-height: 753px;
-  margin: 0 auto;
+  margin: 102px auto 106px;
   padding: 0;
   display: grid;
   grid-template-columns: repeat(2, max-content);
@@ -45,8 +46,7 @@ const BlogText = styled.div`
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
-  line-height: 32px;
-  Line height: 107%
+  line-height: 145%;
 `
 const BlogInfo = styled.div`
   width: 100%;
@@ -59,18 +59,17 @@ const BlogInfo = styled.div`
   padding: 0;
 `
 const BlogMetaData = styled.div`
-  background-color: #fff;
   max-width: 379px;
   min-width: 198px;
   height: 70px;
-  margin: 0;
   display: grid;
-  grid-template-rows: repeat(2, max-content);
+  grid-template-rows: repeat(2, 30px);
   padding: 0;
   margin-left: 0;
   margin-right: 5px;
   margin-top: 0;
   margin-bottom: 7px;
+  align-content: space-between;
 `
 const MetaDataText = styled.div`
   padding: 0;
@@ -84,6 +83,8 @@ const MetaDataText = styled.div`
 const MetaDataTitle = styled.div`
   font-style: normal;
   font-weight: 600;
+  line-height: 136%
+  font-size: 22px;
 `
 const BlogImage = styled.div`
   background-color: #fff;
@@ -124,8 +125,8 @@ const TitleText = styled.div`
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
+  line-height: 138%;
   margin-block-start: 0;
-  margin-block-end: 0.5em;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -133,12 +134,11 @@ const TitleText = styled.div`
 `
 
 const TemplatePost = ({ data }) => {
-  console.log(data)
   return (
     <Content>
       <PostTitle>
         <Img>
-          <Image banner={data.banner}/>
+          <Image banner={data.banner} />
         </Img>
         <Title>
           <TitleText>{data.title}</TitleText>
@@ -149,7 +149,7 @@ const TemplatePost = ({ data }) => {
           <BlogText>{renderRichText(data.body, {})}</BlogText>
           <BlogInfo>
             <BlogImage>
-            <Image banner={data.banner}/>
+              <Image banner={data.banner} />
             </BlogImage>
             <BlogMetaData>
               <MetaDataText>

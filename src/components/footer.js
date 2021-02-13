@@ -19,31 +19,29 @@ const Inner = styled.div`
   grid-template-columns: repeat(4, max-content);
   justify-content: space-between;
 `
-const MenuFirst = styled.li`
-  width: max-content;
-  height: max-content;
+const MenuFirst = styled.div`
+  width: 80px;
+  height: 30px;
   padding: 0;
   color: #000;
   font-style: normal;
   font-weight: 600;
   font-size: 22px;
-  list-style: none;
+  line-height: 136%;
 `
-const Menu = styled.li`
-  width: max-content;
-  height: max-content;
+const Menu = styled.div`
+  width: 80px;
+  height: 30px;
   padding: 0;
   color: #000;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
-  list-style: none;
+  line-height: 136%;
 `
-
-const Menus = styled.ul`
+const Menus = styled.div`
   margin: 0;
   display: grid;
-  justify-content: space-between;
   width: max-content;
   height: 141px;
   grid-template-row: repeat(4, max-content);
