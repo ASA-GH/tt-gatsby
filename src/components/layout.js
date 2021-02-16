@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Header from "./header"
-import Footer from "./footer"
+import Header from "./header/header"
+import Footer from "./footer/footer"
 import styled from "styled-components"
 
 const Container = styled.div`
@@ -20,7 +20,6 @@ const Wrapper = styled.div`
   width: 100%;
   display: grid;
   grid-template-rows: 1fr max-content;
-  background-color: #e5e5e5;
 `
 const Inner = styled.div`
   width: 100%;

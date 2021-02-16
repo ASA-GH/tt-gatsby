@@ -1,7 +1,8 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
-import TemplatePost from "../templates/templatePost"
+import PropTypes from "prop-types"
+import TemplatePost from "../templates/templatePost/templatePost"
 // import SEO from "../components/seo"
 
 const IndexPage = () => {
@@ -30,6 +31,18 @@ const IndexPage = () => {
       <TemplatePost data={content} />
     </Layout>
   )
+}
+
+IndexPage.propTypes = {
+  TemplatePost: PropTypes.node.isRequired,
+  data: PropTypes.object.isRequired,
+  content: PropTypes.object.isRequired,
+}
+
+IndexPage.defaultProps = {
+  TemplatePost: ``,
+  data: {},
+  content: {},
 }
 
 export default IndexPage
