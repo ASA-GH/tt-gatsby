@@ -2,7 +2,6 @@ import React from "react"
 import Image from "../../components/image"
 import styled from "styled-components"
 import PropTypes from "prop-types"
-// import SEO from "../components/seo"
 
 const Wrapper = styled.div`
   width: 360px;
@@ -47,7 +46,6 @@ const PostTitle = ({ data }) => {
       <Title>
         <Text>{data.title}</Text>
       </Title>
-      {/* <SEO title="Home" /> */}
     </Wrapper>
   )
 }

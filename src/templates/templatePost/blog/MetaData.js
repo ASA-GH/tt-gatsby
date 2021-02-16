@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import PropTypes from "prop-types"
-// import SEO from "../components/seo"
 
 const Ul = styled.ul`
   max-width: 379px;

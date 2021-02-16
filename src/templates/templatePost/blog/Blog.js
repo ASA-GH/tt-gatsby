@@ -4,7 +4,6 @@ import styled from "styled-components"
 import PropTypes from "prop-types"
 import MetaData from "./MetaData"
 
-// import SEO from "../components/seo"
 import { renderRichText } from "gatsby-source-contentful/rich-text"
 
 const Inner = styled.div`
@@ -71,7 +70,6 @@ const Blog = ({ data }) => {
           <MetaData data={data} />
         </BlogInfo>
       </Inner>
-      {/* <SEO title="Home" /> */}
     </Wrapper>
   )
 }

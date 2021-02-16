@@ -4,7 +4,6 @@ import PostTitle from "./PostTitle"
 import Blog from "./blog/Blog"
 import PropTypes from "prop-types"
 
-// import SEO from "../components/seo"
 const Content = styled.div`
   min-width: 1160px;
   max-width: 1200px;
@@ -21,7 +20,6 @@ const TemplatePost = ({ data }) => {
     <Content>
       <PostTitle data={data} />
       <Blog data={data} />
-      {/* <SEO title="Home" /> */}
     </Content>
   )
 }

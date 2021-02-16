@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import PropTypes from "prop-types"
 import TemplatePost from "../templates/templatePost/templatePost"
-// import SEO from "../components/seo"
+import SEO from "../components/seo"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -28,6 +28,7 @@ const IndexPage = () => {
   const content = data.allContentfulMyPost.nodes[0]
   return (
     <Layout>
+      <SEO title="Home" />
       <TemplatePost data={content} />
     </Layout>
   )
